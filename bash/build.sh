@@ -10,7 +10,7 @@ mkdir -p pkg/usr build
 ../src/configure --prefix=$(pwd)/../pkg/usr \
                  --build=$(../src/support/config.guess) \
                  --host="x86_64-pax-linux-gnu" \
-                 --without-bash-malloc
+                 --without-bash-malloc &&
 make -j$(nproc) &&
 make install)
 cp package.toml pkg
