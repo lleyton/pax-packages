@@ -9,7 +9,7 @@ mv linux-* src
 mkdir -p pkg/boot pkg/lib/modules pkg/usr/share doc/linux-$VER
 (cd src && 
 make defconfig && 
-make -j$(nrpox) &&
+make -j$(nproc) &&
 cp -iv arch/x86/boot/bzImage ../pkg/boot/vmlinuz-$VER-pax-11.0-systemd &&
 cp -iv System.map /boot/System.map-$VER &&
 cp -iv .config /boot/config-$VER &&
