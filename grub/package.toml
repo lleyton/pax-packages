@@ -1,0 +1,17 @@
+spec = 1
+
+[package]
+name = "grub"
+description = "GNU GRUB is a Multiboot boot loader. It was derived from GRUB, the GRand Unified Bootloader, which was originally designed and implemented by Erich Stefan Boleyn."
+version = "2.06"
+authors = [
+  "gnu"
+]
+maintainers = [
+  "Lleyton <lleyton@innatical.com>"
+]
+
+[dependencies]
+[files]
+etc = "./etc"
+usr = "./usr"
