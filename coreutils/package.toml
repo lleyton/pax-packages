@@ -1,0 +1,16 @@
+spec = 1
+
+[package]
+name = "coreutils"
+description = "The GNU Core Utilities are the basic file, shell and text manipulation utilities of the GNU operating system. These are the core utilities which are expected to exist on every operating system."
+version = "9.0"
+authors = [
+  "gnu"
+]
+maintainers = [
+  "Lleyton <lleyton@innatical.com>"
+]
+
+[dependencies]
+[files]
+usr = './usr'
