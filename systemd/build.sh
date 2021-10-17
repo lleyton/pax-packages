@@ -29,4 +29,6 @@ LANG=en_US.UTF-8 ninja &&
 LANG=en_US.UTF-8 ninja install
 )
 
+cp package.toml pkg
+
 ( cd pkg && tar cJf ../../out/systemd.apkg * )
