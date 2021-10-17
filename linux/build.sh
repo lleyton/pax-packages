@@ -15,7 +15,10 @@ cp -iv System.map /boot/System.map-$VER &&
 cp -iv .config /boot/config-$VER &&
 install -d ../pkg/usr/share/doc/linux-$VER &&
 cp -r Documentation/* ../pkg/usr/share/doc/linux-$VER &&
-install -v -m755 -d ../pkg/etc/modprobe.d
+install -v -m755 -d ../pkg/etc/modprobe.d &&
+INSTALL_MOD_PATH=../pkg \
+INSTALL_PATH=../pkg/boot \
+make modules_install &&
 cat > ../pkg/etc/modprobe.d/usb.conf << "EOF"
 # Begin /etc/modprobe.d/usb.conf
 
