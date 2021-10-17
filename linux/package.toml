@@ -1,0 +1,19 @@
+spec = 1
+
+[package]
+name = "linux"
+description = "The Linux kernel"
+version = "5.10.73"
+authors = [
+  "The Linux Project"
+]
+maintainers = [
+  "Lleyton <lleyton@innatical.com>"
+]
+
+[dependencies]
+[files]
+boot = "./boot"
+etc = "./etc"
+lib = "./lib"
+usr = "./usr"
