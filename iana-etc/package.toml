@@ -1,0 +1,16 @@
+spec = 1
+
+[package]
+name = "iana-etc"
+description = "Tracks changes daily of IANA's Assigned Internet Protocol Numbers using git and build /etc/protocols and /etc/services files using travis-ci."
+version = "0.20211004.0"
+authors = [
+  "Mic92"
+]
+maintainers = [
+  "Lleyton <lleyton@innatical.com>"
+]
+
+[files]
+"etc/protocols" = "./protocols"
+"etc/services" = "./services"

@@ -1,0 +1,22 @@
+spec = 1
+
+[package]
+name = "systemd"
+description = "systemd is a suite of basic building blocks for a Linux system. It provides a system and service manager that runs as PID 1 and starts the rest of the system."
+version = "249.0.0"
+authors = [
+  "systemd"
+]
+maintainers = [
+  "Lleyton <lleyton@innatical.com>"
+]
+
+[dependencies]
+[files]
+bin = "./bin"
+etc = "./etc"
+lib = "./lib"
+lib64 = "./lib64"
+sbin = "./sbin"
+usr = "./usr"
+var = "./var"

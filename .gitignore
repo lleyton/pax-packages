@@ -1,0 +1,8 @@
+**/src
+**/pkg
+**/build
+**/src.tar.gz
+**/src.tar.xz
+.DS_Store
+
+out/**.apkg

@@ -1,0 +1,15 @@
+spec = 1
+
+[package]
+name = "man-pages"
+description = "Describe C programming language functions, important device files, and significant configuration files"
+version = "5.13.0"
+authors = [
+  "The Linux Project"
+]
+maintainers = [
+  "Lleyton <lleyton@innatical.com>"
+]
+
+[files]
+"usr" = "./usr"
