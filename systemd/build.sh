@@ -28,3 +28,5 @@ meson -Drootprefix=$(pwd)/../pkg     \
 LANG=en_US.UTF-8 ninja &&
 LANG=en_US.UTF-8 ninja install
 )
+
+( cd pkg && tar cJf ../../out/systemd.apkg * )
