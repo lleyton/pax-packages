@@ -8,4 +8,4 @@ mkdir -p pkg/usr build
 (cd build && ../src/configure --prefix=$(pwd)/../usr --disable-werror --enable-kernel=3.2 --enable-stack-protector=strong --with-headers=/usr/include libc_cv_slibdir=/usr/lib && make && make install)
 cp package.toml pkg
 
-tar cfJ ../out/man-pages.apkg pkg/*
+(cd pkg && tar cfJ ../out/glibc.apkg *)
