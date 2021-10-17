@@ -30,4 +30,4 @@ EOF
 )
 
 cp package.toml pkg
-tar cJf ../out/linux-$VER.apkg pkg/*
+tar cJf ../out/linux.apkg pkg/*
