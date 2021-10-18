@@ -1,8 +1,8 @@
 SRC="https://invisible-island.net/datafiles/release/ncurses.tar.gz"
 
-# curl -L $SRC -o src.tar.gz
-# tar -xzf src.tar.gz
-# mv ncurses-* src
+curl -L $SRC -o src.tar.gz
+tar -xzf src.tar.gz
+mv ncurses-* src
 
 mkdir -p pkg/usr build
 (cd build &&
