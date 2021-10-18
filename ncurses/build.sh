@@ -25,10 +25,6 @@ for lib in ncurses form panel menu ; do
     echo "INPUT(-l${lib}w)" > $(pwd)/../pkg/usr/lib/lib${lib}.so
 done)
 
-rm -vf                     $(pwd)/pkg/usr/lib/libcursesw.so
-echo "INPUT(-lncursesw)" > $(pwd)/pkg/usr/lib/libcursesw.so
-ln -sfv libncurses.so      $(pwd)/pkg/usr/lib/libcurses.so
-
 rm -fv $(pwd)/pkg/usr/lib/libncurses++w.a
 
 cp package.toml pkg
