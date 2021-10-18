@@ -12,5 +12,7 @@ maintainers = [
 ]
 
 [dependencies]
+glibc = "^2.34.0"
+
 [files]
 usr = './usr'
