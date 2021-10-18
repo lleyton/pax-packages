@@ -1,0 +1,18 @@
+spec = 1
+
+[package]
+name = "gtk4"
+description = "GTK is a free and open-source cross-platform widget toolkit for creating graphical user interfaces."
+version = "4.4.0"
+authors = [
+  "The GNOME Project"
+]
+maintainers = [
+  "Jamie <hello@jamiethalacker.dev>"
+]
+
+[dependencies]
+[files]
+usr = "./usr"
+etc = "./etc"
+
