@@ -1,0 +1,19 @@
+spec = 1
+
+[package]
+name = "fish"
+description = "The friendly interactive shell"
+version = "3.3.1"
+authors = [
+  "fish"
+]
+maintainers = [
+  "Jamie <hello@jamiethalacker.dev>"
+]
+
+[dependencies]
+[files]
+usr = "./usr"
+
+[hooks]
+postinstall = "./postinstall.sh"
