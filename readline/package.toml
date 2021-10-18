@@ -1,0 +1,15 @@
+spec = 1
+
+[package]
+name = "readline"
+description = "The Readline package is a set of libraries that offers command-line editing and history capabilities."
+version = "8.1.0"
+authors = [
+  "The GNU Project"
+]
+maintainers = [
+  "Lleyton <lleyton@innatical.com>"
+]
+
+[files]
+"usr" = "./usr"
