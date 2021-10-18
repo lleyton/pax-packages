@@ -5,7 +5,7 @@ tar -xf src.tar.gz
 mv readline-* src
 
 mkdir -p pkg/usr
-(
+( cd src &&
 ./configure --prefix=$(pwd)/../pkg/usr    \
             --disable-static \
             --with-curses &&
