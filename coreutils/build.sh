@@ -1,5 +1,5 @@
 VER="9.0"
-SRC="https://ftp.gnu.org/gnu/coreutils/coreutils-9.0.tar.xz"
+SRC="https://ftp.gnu.org/gnu/coreutils/coreutils-$VER.tar.xz"
 
 curl -L $SRC -o src.tar.xz
 tar -xJf src.tar.xz
@@ -13,7 +13,18 @@ mkdir -p pkg/usr build
                  --enable-install-program=hostname \
                  --enable-no-install-program=kill,uptime &&
 make -j$(nproc) &&
-make install)
-cp package.toml pkg
+make install &&
+mv -v $(pwd)/../pkg/usr/bin/chroot              $(pwd)/../pkg/usr/sbin &&
+mkdir -pv $(pwd)/../pkg/usr/share/man/man8 && 
+mv -v $(pwd)/../pkg/usr/share/man/man1/chroot.1 $(pwd)/../pkg/usr/share/man/man8/chroot.8 &&
+sed -i 's/"1"/"8"/'                    $(pwd)/../pkg/usr/share/man/man8/chroot.8)
 
+cp package.toml pkg
 ( cd pkg && tar cJf ../../out/coreutils.apkg * )
+
+# Cleanup
+
+rm -rf pkg
+rm -rf src
+rm -rf build
+rm -f src.tar.xz
