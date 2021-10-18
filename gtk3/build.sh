@@ -17,11 +17,11 @@ make -j4                                    &&
 make install)
 
 # Default GTK Configuration
-mkdir -vp $(pwd)/../pkg/etc/gtk-3.0/
-cat > $(pwd)/../pkg/etc/gtk-3.0/settings.ini << "EOF"
+mkdir -vp $(pwd)/pkg/etc/gtk-3.0/
+cat > $(pwd)/pkg/etc/gtk-3.0/settings.ini << "EOF"
 [Settings]
 gtk-theme-name = Adwaita
-gtk-icon-theme-name = oxygen
+gtk-icon-theme-name = Adwaita
 gtk-font-name = DejaVu Sans 12
 gtk-cursor-theme-size = 18
 gtk-toolbar-style = GTK_TOOLBAR_BOTH_HORIZ
