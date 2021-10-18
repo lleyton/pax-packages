@@ -14,8 +14,7 @@ mkdir -p pkg/usr build
                  --without-debug \
                  --without-ada \
                  --without-normal \
-                 --with-termlib \
-                 --enable-widec && 
+                 --with-termlib && 
 make -j$(nproc) && 
 make install)
 cp package.toml pkg
