@@ -1,0 +1,15 @@
+spec = 1
+
+[package]
+name = "ncurses"
+description = ""
+version = "6.2"
+authors = [
+  "Thomas E. Dickey"
+]
+maintainers = [
+  "Lleyton <lleyton@innatical.com>"
+]
+
+[files]
+"usr" = "./usr"
