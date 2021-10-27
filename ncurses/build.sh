@@ -20,7 +20,7 @@ make -j$(nproc) &&
 make install)
 
 (cd build &&
-for lib in ncurses form panel menu ; do
+for lib in ncurses form panel menu tinfo ; do
     rm -vf                    $(pwd)/../pkg/usr/lib/lib${lib}.so
     echo "INPUT(-l${lib}w)" > $(pwd)/../pkg/usr/lib/lib${lib}.so
 done)
