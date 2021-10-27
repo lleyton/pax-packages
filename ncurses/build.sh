@@ -22,7 +22,9 @@ make install)
 (cd build &&
 for lib in ncurses form panel menu tinfo ; do
     rm -vf                    $(pwd)/../pkg/usr/lib/lib${lib}.so
-    echo "INPUT(-l${lib}w)" > $(pwd)/../pkg/usr/lib/lib${lib}.so
+    ln $(pwd)/../pkg/usr/lib/lib${lib}w.so $(pwd)/../pkg/usr/lib/lib${lib}.so
+    ln $(pwd)/../pkg/usr/lib/lib${lib}w.so $(pwd)/../pkg/usr/lib/lib${lib}.so.6
+    ln $(pwd)/../pkg/usr/lib/lib${lib}w.so $(pwd)/../pkg/usr/lib/lib${lib}.so.6.3
 done)
 
 rm -fv $(pwd)/pkg/usr/lib/libncurses++w.a
