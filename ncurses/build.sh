@@ -21,10 +21,10 @@ make install)
 
 (cd pkg/usr/lib &&
 for lib in ncurses form panel menu tinfo ; do
-    rm -vf             ./lib${lib}.so
-    ln ./lib${lib}w.so ./lib${lib}.so
-    ln ./lib${lib}w.so ./lib${lib}.so.6
-    ln ./lib${lib}w.so ./lib${lib}.so.6.3
+    rm -vf                ./lib${lib}.so
+    ln -s ./lib${lib}w.so ./lib${lib}.so
+    ln -s ./lib${lib}w.so ./lib${lib}.so.6
+    ln -s ./lib${lib}w.so ./lib${lib}.so.6.3
 done)
 
 rm -fv $(pwd)/pkg/usr/lib/libncurses++w.a
