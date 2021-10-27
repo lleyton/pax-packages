@@ -6,7 +6,7 @@ mv glibc-* src
 
 mkdir -p pkg/usr build
 (cd build &&
-../src/configure --prefix=$(pwd)/../pkg/usr \
+../src/configure --prefix=/usr \
                  --disable-werror \
                  --enable-kernel=3.2 \
                  --enable-stack-protector=strong \
@@ -15,7 +15,7 @@ mkdir -p pkg/usr build
                  --host="x86_64-pax-linux-gnu"
                  libc_cv_slibdir=/usr/lib && 
 make -j$(nproc) && 
-make install)
+DESTDIR=../pkg make install)
 cp package.toml pkg
 
 (cd pkg && tar cfJ ../../out/glibc.apkg *)
