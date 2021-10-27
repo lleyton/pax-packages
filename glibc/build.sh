@@ -13,7 +13,7 @@ mkdir -p pkg/usr build
                  --with-headers=/usr/include \
                  --build=$(../src/scripts/config.guess) \
                  --host="x86_64-pax-linux-gnu"
-                 libc_cv_slibdir=/usr/lib && 
+                 libc_cv_slibdir=$(pwd)/../usr/lib && 
 make -j$(nproc) && 
 DESTDIR=../pkg/usr make install)
 cp package.toml pkg
