@@ -12,7 +12,7 @@ mkdir -p pkg/usr build
                  --enable-stack-protector=strong \
                  --with-headers=/usr/include \
                  --build=$(../src/scripts/config.guess) \
-                 --host="x86_64-pax-linux-gnu"
+                 --host="x86_64-pax-linux-gnu" \
                  libc_cv_slibdir=/usr/lib && 
 make -j$(nproc) && 
 make DESTDIR=../pkg install)
