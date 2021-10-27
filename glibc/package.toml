@@ -13,3 +13,6 @@ maintainers = [
 
 [files]
 "usr" = "./usr"
+"etc" = "./etc"
+"sbin" = "./sbin"
+"var" = "./var"
