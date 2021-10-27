@@ -15,7 +15,7 @@ mkdir -p pkg/usr build
                  --host="x86_64-pax-linux-gnu"
                  libc_cv_slibdir=/usr/lib && 
 make -j$(nproc) && 
-DESTDIR=../pkg make install)
+DESTDIR=../pkg/usr make install)
 cp package.toml pkg
 
 (cd pkg && tar cfJ ../../out/glibc.apkg *)
