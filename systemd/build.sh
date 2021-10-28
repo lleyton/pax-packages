@@ -7,10 +7,9 @@ mv systemd-* src
 mkdir -p build pkg
 (cd build &&
 LANG=en_US.UTF-8                    \
-meson -Drootprefix=$(pwd)/../pkg     \
-      --prefix=$(pwd)/../pkg/usr    \
-      --sysconfdir=$(pwd)/../pkg/etc \
-      --localstatedir=$(pwd)/../pkg/var \
+meson --prefix=/usr    \
+      --sysconfdir=/etc \
+      --localstatedir=/var \
       --buildtype=release           \
       -Dblkid=true                  \
       -Ddefault-dnssec=no           \
@@ -26,7 +25,7 @@ meson -Drootprefix=$(pwd)/../pkg     \
       -Ddocdir=/usr/share/doc/systemd-249 \
       ../src &&
 LANG=en_US.UTF-8 ninja &&
-LANG=en_US.UTF-8 ninja install
+LANG=en_US.UTF-8 DESTDIR=$(pwd)/../pkg ninja install
 )
 
 cp package.toml pkg
