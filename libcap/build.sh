@@ -4,8 +4,8 @@ curl -L $SRC -o src.tar.xz
 tar -xJf src.tar.xz
 mv libcap-* src
 
-mkdir -p pkg/usr build
-(cd build &&
+mkdir -p pkg/usr
+(cd src &&
 sed -i '/install -m.*STA/d' Makefile &&
 make prefix=/usr lib=lib &&
 make prefix=$(pwd)/../pkg/usr lib=lib install &&
