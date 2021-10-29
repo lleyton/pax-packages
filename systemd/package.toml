@@ -13,10 +13,6 @@ maintainers = [
 
 [dependencies]
 [files]
-bin = "./bin"
 etc = "./etc"
-lib = "./lib"
-lib64 = "./lib64"
-sbin = "./sbin"
 usr = "./usr"
 var = "./var"
