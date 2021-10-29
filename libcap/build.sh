@@ -1,7 +1,7 @@
 SRC="https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.53.tar.xz"
 
-curl -L $SRC -o src.tar.gz
-tar -xzf src.tar.gz
+curl -L $SRC -o src.tar.xz
+tar -xJf src.tar.xz
 mv libcap-* src
 
 mkdir -p pkg/usr build
