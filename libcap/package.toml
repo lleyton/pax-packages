@@ -1,0 +1,15 @@
+spec = 1
+
+[package]
+name = "libcap"
+description = "The Libcap package implements the user-space interfaces to the POSIX 1003.1e capabilities available in Linux kernels. These capabilities are a partitioning of the all powerful root privilege into a set of distinct privileges."
+version = "2.53"
+authors = [
+  "The Linux Project"
+]
+maintainers = [
+  "Lleyton <lleyton@innatical.com>"
+]
+
+[files]
+"usr" = "./usr"
