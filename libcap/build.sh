@@ -6,7 +6,6 @@ mv libcap-* src
 
 mkdir -p pkg/usr
 (cd src &&
-sed -i '/install -m.*STA/d' Makefile &&
 make prefix=/usr lib=lib &&
 make prefix=$(pwd)/../pkg/usr lib=lib install &&
 chmod -v 755 ../pkg/usr/lib/lib{cap,psx}.so.2.53)
