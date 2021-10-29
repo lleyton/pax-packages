@@ -23,6 +23,8 @@ meson --prefix=/usr    \
       -Dman=false                   \
       -Dmode=release                \
       -Ddocdir=/usr/share/doc/systemd-249 \
+      -Dselinux=false \
+      -Dpcre2=false \
       ../src &&
 LANG=en_US.UTF-8 ninja &&
 LANG=en_US.UTF-8 DESTDIR=$(pwd)/../pkg ninja install
