@@ -10,6 +10,7 @@ mkdir -p pkg/usr build
                  --disable-werror \
                  --enable-kernel=3.2 \
                  --enable-stack-protector=strong \
+                 --disable-crypt \
                  --with-headers=/usr/include \
                  --build=$(../src/scripts/config.guess) \
                  --host="x86_64-pax-linux-gnu" \
