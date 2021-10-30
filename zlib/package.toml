@@ -1,0 +1,16 @@
+spec = 1
+
+[package]
+name = "zlib"
+description = "zlib is a software library used for data compression."
+version = "5.1.8"
+authors = [
+  "Jean-loup Gailly",
+  "Mark Adler"
+]
+maintainers = [
+  "Jamie <hello@jamiethalacker.dev>"
+]
+
+[files]
+"usr" = "./usr"
