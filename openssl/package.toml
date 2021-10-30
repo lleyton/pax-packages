@@ -13,3 +13,4 @@ maintainers = [
 
 [files]
 "usr" = "./usr"
+"etc" = "./etc"
