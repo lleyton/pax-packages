@@ -1,0 +1,15 @@
+spec = 1
+
+[package]
+name = "gcc"
+description = "The GNU Compiler Collection is an optimizing compiler produced by the GNU Project supporting various programming languages, hardware architectures and operating systems."
+version = "11.2.0"
+authors = [
+  "The GNU Project"
+]
+maintainers = [
+  "Jamie <hello@jamiethalacker.dev>"
+]
+
+[files]
+"usr" = "./usr"
