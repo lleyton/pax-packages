@@ -12,7 +12,7 @@ pkgs.remove('out')
 
 if('--chroot' in sys.argv):
     print('only building chroot packages!')
-    pkgs = ['bash', 'binutils', 'glibc', 'libcap', 'linux', 'openssl', 'gcc', 'ncurses', 'make']
+    pkgs = ['bash', 'binutils', 'glibc', 'libcap', 'linux', 'openssl', 'gcc', 'ncurses', 'make', 'coreutils']
 
 for built in os.listdir('./out'):
     if(built != '.gitkeep' and built != '.git'):
