@@ -8,4 +8,4 @@ mkdir -p pkg
 cp src/protocols src/services pkg
 cp package.toml pkg
 
-( cd pkg && tar cJf ../../out/iana-etc.apkg * )
+( cd pkg && tar --zstd cf ../../out/iana-etc.apkg * )

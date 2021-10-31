@@ -22,7 +22,7 @@ sed -i 's/"1"/"8"/'                    $(pwd)/../pkg/usr/share/man/man8/chroot.8
 rm pkg/usr/share/info/dir
 
 cp package.toml pkg
-( cd pkg && tar cJf ../../out/coreutils.apkg * )
+( cd pkg && tar --zstd cf ../../out/coreutils.apkg * )
 
 # Cleanup
 

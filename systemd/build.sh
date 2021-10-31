@@ -32,4 +32,4 @@ LANG=en_US.UTF-8 DESTDIR=$(pwd)/../pkg ninja install
 
 cp package.toml pkg
 
-( cd pkg && tar cJf ../../out/systemd.apkg * )
+( cd pkg && tar --zstd cf ../../out/systemd.apkg * )
