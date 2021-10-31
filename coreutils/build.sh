@@ -19,6 +19,7 @@ mv -v $(pwd)/../pkg/usr/bin/chroot              $(pwd)/../pkg/usr/sbin &&
 mkdir -pv $(pwd)/../pkg/usr/share/man/man8 && 
 mv -v $(pwd)/../pkg/usr/share/man/man1/chroot.1 $(pwd)/../pkg/usr/share/man/man8/chroot.8 &&
 sed -i 's/"1"/"8"/'                    $(pwd)/../pkg/usr/share/man/man8/chroot.8)
+rm pkg/usr/share/info/dir
 
 cp package.toml pkg
 ( cd pkg && tar cJf ../../out/coreutils.apkg * )
