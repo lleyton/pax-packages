@@ -14,6 +14,7 @@ mkdir -p pkg/usr build
                  --enable-no-install-program=kill,uptime &&
 make -j$(nproc) &&
 make install &&
+mkdir -p $(pwd)/../pkg/usr/sbin &&
 mv -v $(pwd)/../pkg/usr/bin/chroot              $(pwd)/../pkg/usr/sbin &&
 mkdir -pv $(pwd)/../pkg/usr/share/man/man8 && 
 mv -v $(pwd)/../pkg/usr/share/man/man1/chroot.1 $(pwd)/../pkg/usr/share/man/man8/chroot.8 &&
