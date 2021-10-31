@@ -30,7 +30,7 @@ mkdir -p pkg
 
 cp package.toml pkg
 
-(cd pkg && tar cfJ ../../out/util-linux.apkg *)
+(cd pkg && tar --zstd -cf ../../out/util-linux.apkg *)
 
 # Cleanup
 sudo rm -r pkg

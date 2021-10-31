@@ -31,4 +31,4 @@ rm -fv $(pwd)/pkg/usr/lib/libncurses++w.a
 
 cp package.toml pkg
 
-(cd pkg && tar cfJ ../../out/ncurses.apkg *)
+(cd pkg && tar --zstd -cf ../../out/ncurses.apkg *)

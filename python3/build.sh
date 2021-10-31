@@ -22,7 +22,7 @@ make -j$(nproc)                             &&
 make DESTDIR=$(pwd)/../pkg install_root=$(pwd)/../pkg install)
 cp package.toml pkg
 
-(cd pkg && tar cfJ ../../out/python3.apkg *)
+(cd pkg && tar --zstd -cf ../../out/python3.apkg *)
 
 # Cleanup
 rm -rf pkg src src.tar.xz

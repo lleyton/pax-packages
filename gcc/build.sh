@@ -41,4 +41,4 @@ mv -v $ROOT/usr/lib/*gdb.py $ROOT/usr/share/gdb/auto-load/usr/lib          )
 rm pkg/usr/share/info/dir
 cp package.toml pkg
 
-(cd pkg && tar cfJ ../../out/gcc.apkg *)
+(cd pkg && tar --zstd -cf ../../out/gcc.apkg *)

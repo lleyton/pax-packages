@@ -16,4 +16,4 @@ make DESTDIR=$(pwd)/../pkg install)
 
 cp package.toml pkg
 
-(cd pkg && tar cfJ ../../out/openssl.apkg *)
+(cd pkg && tar --zstd -cf ../../out/openssl.apkg *)

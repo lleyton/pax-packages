@@ -12,4 +12,4 @@ chmod -v 755 ../pkg/usr/lib/lib{cap,psx}.so.2.53)
 
 cp package.toml pkg
 
-(cd pkg && tar cfJ ../../out/libcap.apkg *)
+(cd pkg && tar --zstd -cf ../../out/libcap.apkg *)

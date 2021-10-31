@@ -12,4 +12,4 @@ make -j$(nproc) &&
 make DESTDIR=$(pwd)/../pkg install)
 cp package.toml pkg
 
-(cd pkg && tar cfJ ../../out/make.apkg *)
+(cd pkg && tar --zstd -cf ../../out/make.apkg *)

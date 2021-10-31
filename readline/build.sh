@@ -15,4 +15,4 @@ rm pkg/usr/share/info/dir
 
 cp package.toml pkg
 
-(cd pkg && tar cfJ ../../out/readline.apkg *)
+(cd pkg && tar --zstd -cf ../../out/readline.apkg *)
