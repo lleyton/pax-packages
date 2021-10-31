@@ -15,4 +15,4 @@ make -j$(nproc) &&
 make install)
 cp package.toml pkg
 
-( cd pkg && tar --zstd cf ../../out/grub.apkg * )
+( cd pkg && tar --zstd -cf ../../out/grub.apkg * )

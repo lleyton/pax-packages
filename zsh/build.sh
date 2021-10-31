@@ -23,7 +23,7 @@ install -v -m644 Doc/zsh.{html,txt} $(pwd)/../pkg/usr/share/doc/zsh
 
 cp postinstall.sh pkg
 cp package.toml pkg
-( cd pkg && tar --zstd cf ../../out/zsh.apkg * )
+( cd pkg && tar --zstd -cf ../../out/zsh.apkg * )
 
 # Cleanup
 

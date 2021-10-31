@@ -19,7 +19,7 @@ make DESTDIR=$(pwd)/../pkg install_root=$(pwd)/../pkg tooldir=/usr install -j1 &
 rm -fv $(pwd)/../pkg/usr/lib/lib{bfd,ctf,ctf-nobfd,opcodes}.a)
 cp package.toml pkg
 
-( cd pkg && tar --zstd cf ../../out/binutils.apkg * )
+( cd pkg && tar --zstd -cf ../../out/binutils.apkg * )
 
 # Cleanup
 rm -rf pkg build src src.tar.xz

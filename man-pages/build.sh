@@ -8,4 +8,4 @@ mkdir -p pkg/usr
 (cd src && make prefix=../pkg/usr install)
 cp package.toml pkg
 
-( cd pkg && tar --zstd cf ../../out/man-pages.apkg * )
+( cd pkg && tar --zstd -cf ../../out/man-pages.apkg * )

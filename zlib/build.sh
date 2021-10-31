@@ -15,7 +15,7 @@ make DESTDIR=$(pwd)/../pkg install_root=$(pwd)/../pkg install &&
 rm -fv $(pwd)/../pkg/usr/lib/libz.a)
 cp package.toml pkg
 
-( cd pkg && tar --zstd cf ../../out/zlib.apkg * )
+( cd pkg && tar --zstd -cf ../../out/zlib.apkg * )
 
 # Cleanup
 rm -rf pkg src src.tar.xz

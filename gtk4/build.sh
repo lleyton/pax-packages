@@ -29,7 +29,7 @@ gtk-cursor-theme-name = Adwaita
 EOF
 
 cp package.toml pkg
-( cd pkg && tar --zstd cf ../../out/gtk4.apkg * )
+( cd pkg && tar --zstd -cf ../../out/gtk4.apkg * )
 
 # Cleanup
 

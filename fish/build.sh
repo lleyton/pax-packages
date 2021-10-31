@@ -13,7 +13,7 @@ make install)
 
 cp postinstall.sh pkg
 cp package.toml pkg
-( cd pkg && tar --zstd cf ../../out/fish.apkg * )
+( cd pkg && tar --zstd -cf ../../out/fish.apkg * )
 
 # Cleanup
 

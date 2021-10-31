@@ -30,4 +30,4 @@ EOF
 )
 
 cp package.toml pkg
-( cd pkg && tar --zstd cf ../../out/linux.apkg * )
+( cd pkg && tar --zstd -cf ../../out/linux.apkg * )
