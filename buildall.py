@@ -11,7 +11,7 @@ for file in os.listdir('.'):
 pkgs.remove('out')
 
 if('--chroot' in sys.argv):
-    print('only building essential packages!')
+    print('only building chroot packages!')
     pkgs = ['bash', 'binutils', 'glibc', 'libcap', 'linux', 'openssl', 'gcc', 'ncurses', 'make']
 
 for built in os.listdir('./out'):
