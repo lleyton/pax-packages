@@ -36,7 +36,7 @@ make DESTDIR=$ROOT install_root=$ROOT install                         &&
 rm -rf $ROOT/usr/lib/gcc/$(gcc -dumpmachine)/$VER/include-fixed/bits/ &&
 ln -svr $ROOT/usr/bin/cpp $ROOT/usr/lib                               &&
 mkdir -pv $ROOT/usr/share/gdb/auto-load/usr/lib                       &&
-mv -v $ROOT/usr/lib/*gdb.py /usr/share/gdb/auto-load/usr/lib          )
+mv -v $ROOT/usr/lib/*gdb.py $ROOT/usr/share/gdb/auto-load/usr/lib          )
 
 cp package.toml pkg
 
