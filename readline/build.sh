@@ -11,6 +11,7 @@ mkdir -p pkg/usr
             --with-curses &&
 make SHLIB_LIBS="-lncursesw" -j$(nproc) && 
 make SHLIB_LIBS="-lncursesw" install)
+rm pkg/usr/share/info/dir
 
 cp package.toml pkg
 
