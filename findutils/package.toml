@@ -1,0 +1,20 @@
+spec = 1
+
+[package]
+name = "findutils"
+description = "The GNU Find Utilities or findutils is a GNU package which offers basic file searching utilities to search the systems directories of GNU and Unix based computers."
+version = "4.8.0"
+authors = [
+  "The GNU Project"
+]
+maintainers = [
+  "Jamie <hello@jamiethalacker.dev"
+]
+
+[files]
+"usr" = "./usr"
+"var" = "./var"
+
+[hooks]
+postinstall = "./postinstall.sh"
+preremove = "./preremove.sh"
