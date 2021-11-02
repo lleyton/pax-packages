@@ -1,3 +1,5 @@
+#!/bin/sh
+
 VER="2.37"
 SRC="https://ftp.gnu.org/gnu/binutils/binutils-$VER.tar.xz"
 
@@ -16,7 +18,11 @@ mkdir -p pkg build
                  --enable-64-bit-bfd &&
 make -j$(nproc) tooldir=/usr         &&
 make DESTDIR=$(pwd)/../pkg install_root=$(pwd)/../pkg tooldir=/usr install -j1 &&
-rm -fv $(pwd)/../pkg/usr/lib/lib{bfd,ctf,ctf-nobfd,opcodes}.a)
+rm -fv $(pwd)/../pkg/usr/lib/lib{bfd,ctf,ctf-nobfd,opcodes}.a &&
+rm -rf $(pwd)/../pkg/usr/share/info/dir)
+
+cp postinstall.sh pkg
+cp preremove.sh pkg
 cp package.toml pkg
 
 ( cd pkg && tar --zstd -cf ../../out/binutils.apkg * )

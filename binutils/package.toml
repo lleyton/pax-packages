@@ -16,3 +16,7 @@ glibc = "^2.34.0"
 
 [files]
 usr = './usr'
+
+[hooks]
+postinstall = "./postinstall.sh"
+preremove = "./preremove.sh"
