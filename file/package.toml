@@ -1,0 +1,15 @@
+spec = 1
+
+[package]
+name = "file"
+description = "The file command is a standard program of Unix and Unix-like operating systems for recognizing the type of data contained in a computer file."
+version = "5.40"
+authors = [
+  "Ian Darwin"
+]
+maintainers = [
+  "Jamie <hello@jamiethalacker.dev"
+]
+
+[files]
+"usr" = "./usr"
