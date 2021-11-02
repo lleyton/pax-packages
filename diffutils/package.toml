@@ -1,0 +1,19 @@
+spec = 1
+
+[package]
+name = "diffutils"
+description = "GNU Diffutils is a package of several programs related to finding differences between files."
+version = "3.8"
+authors = [
+  "The GNU Project"
+]
+maintainers = [
+  "Jamie <hello@jamiethalacker.dev"
+]
+
+[files]
+"usr" = "./usr"
+
+[hooks]
+postinstall = "./postinstall.sh"
+preremove = "./preremove.sh"
