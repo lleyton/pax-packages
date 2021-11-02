@@ -1,0 +1,19 @@
+spec = 1
+
+[package]
+name = "m4"
+description = "GNU M4 is an implementation of the traditional Unix macro processor."
+version = "1.4.19"
+authors = [
+  "The GNU Project"
+]
+maintainers = [
+  "Jamie <hello@jamiethalacker.dev"
+]
+
+[files]
+"usr" = "./usr"
+
+[hooks]
+postinstall = "./postinstall.sh"
+preremove = "./preremove.sh"
