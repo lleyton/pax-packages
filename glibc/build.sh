@@ -17,7 +17,6 @@ mkdir -p pkg/usr build
                  libc_cv_slibdir=/usr/lib && 
 make -j$(nproc) && 
 make DESTDIR=$(pwd)/../pkg install_root=$(pwd)/../pkg install)
-rm pkg/usr/share/info/dir
 cp package.toml pkg
 
 (cd pkg && tar --zstd -cf ../../out/glibc.apkg *)
