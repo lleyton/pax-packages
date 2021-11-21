@@ -15,4 +15,5 @@ mkdir -p pkg/usr
 make -j$(nproc) &&
 make DESTDIR=$(pwd)/../pkg install_root=$(pwd)/../pkg install)
 
+cp package.toml pkg
 ( cd pkg && tar --zstd -cf ../../out/tar.apkg * )
