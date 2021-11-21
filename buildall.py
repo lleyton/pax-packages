@@ -15,7 +15,7 @@ if('--chroot' in sys.argv):
     pkgs = ['bash', 'binutils', 'glibc', 'libcap', 'linux', 'openssl', 'gcc', 'ncurses', 'make', 'coreutils']
 
 for built in os.listdir('./out'):
-    if(built != '.gitkeep' and built != '.git'):
+    if(built != '.gitkeep' and built != '.git' and built in pkgs):
         print('already built ' + built[:-5] + '. removing from queue!')
         pkgs.remove(built[:-5])
 
