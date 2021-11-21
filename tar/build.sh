@@ -3,8 +3,8 @@
 VER="1.34"
 SRC="https://ftp.gnu.org/gnu/tar/tar-$VER.tar.xz"
 
-curl -L $SRC -o src.tar.gz
-tar -xzf src.tar.gz
+curl -L $SRC -o src.tar.xz
+tar -xJf src.tar.xz
 mv tar-* src
 
 mkdir -p pkg/usr
