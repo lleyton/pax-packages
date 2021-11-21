@@ -1,0 +1,18 @@
+spec = 1
+
+[package]
+name = "tar"
+description = "The Tar package provides the ability to create tar archives as well as perform various other kinds of archive manipulation. Tar can be used on previously created archives to extract files, to store additional files, or to update or list files which were already stored."
+version = "1.34"
+authors = [
+  "gnu"
+]
+maintainers = [
+  "Lleyton <lleyton@innatical.com>"
+]
+
+[dependencies]
+glibc = "^2.34.0"
+
+[files]
+usr = './usr'
