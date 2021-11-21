@@ -21,6 +21,6 @@ for built in os.listdir('./out'):
 
 for pkg in pkgs:
     os.chdir(pkg)
-    if os.system('sh ./build.sh') != 0:
+    if os.system('bash ./build.sh') != 0:
         raise SystemExit('build script failed')
     os.chdir('../')
