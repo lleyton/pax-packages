@@ -1,0 +1,19 @@
+spec = 1
+
+[package]
+name = "wget"
+description = "The Wget package contains a utility useful for non-interactive downloading of files from the Web."
+version = "1.21.1"
+authors = [
+  "gnu"
+]
+maintainers = [
+  "Lleyton <lleyton@innatical.com>"
+]
+
+[dependencies]
+glibc = "^2.34.0"
+
+[files]
+usr = './usr'
+etc = './etc'
