@@ -9,7 +9,7 @@ mv wget-* src
 
 mkdir -p pkg/usr pkg/etc build
 (cd build &&
-./configure --prefix=/usr      \
+../src/configure --prefix=/usr      \
             --sysconfdir=/etc  \
             --with-ssl=openssl &&
 make -j$(nproc) &&
