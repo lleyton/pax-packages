@@ -14,6 +14,7 @@ mkdir -p pkg/usr pkg/etc build
             --with-ssl=openssl &&
 make -j$(nproc) &&
 make DESTDIR=$(pwd)/../pkg install_root=$(pwd)/../pkg install)
+rm pkg/usr/share/info/dir
 
 cp package.toml pkg
 ( cd pkg && tar --zstd -cf ../../out/wget.apkg * )
