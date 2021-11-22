@@ -2,7 +2,7 @@ VER="1.5.0"
 SRC="https://github.com/facebook/zstd/releases/download/v$VER/zstd-$VER.tar.gz"
 
 curl -L $SRC -o src.tar.xz
-tar -xJf src.tar.xz
+tar -xf src.tar.xz
 mv zstd-* src
 
 mkdir -p pkg/usr
