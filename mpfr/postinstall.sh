@@ -1,4 +1,3 @@
-
 #!/bin/sh
 
 bold=$(tput bold)
