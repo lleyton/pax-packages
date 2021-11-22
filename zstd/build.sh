@@ -9,7 +9,7 @@ mkdir -p pkg/usr
 (cd src &&
 make &&
 make check &&
-make prefix=$(pwd)/../pkg install &&
+make prefix=$(pwd)/../pkg/usr install &&
 rm -v ../pkg/usr/lib/libzstd.a)
 cp package.toml pkg
 
