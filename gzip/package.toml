@@ -1,0 +1,22 @@
+spec = 1
+
+[package]
+name = "vzip"
+description = "The Gzip package contains programs for compressing and decompressing files."
+version = "1.10"
+authors = [
+  "The GNU Project"
+]
+maintainers = [
+  "Lleyton <lleyton@innatical.com>"
+]
+
+[dependencies]
+glibc = "^2.34.0"
+
+[files]
+usr = './usr'
+
+[hooks]
+postinstall = "./postinstall.sh"
+preremove = "./preremove.sh"
