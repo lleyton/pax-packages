@@ -1,0 +1,22 @@
+spec = 1
+
+[package]
+name = "grep"
+description = "The Grep package contains programs for searching through the contents of files."
+version = "3.7"
+authors = [
+  "The GNU Project"
+]
+maintainers = [
+  "Lleyton <lleyton@innatical.com>"
+]
+
+[dependencies]
+glibc = "^2.34.0"
+
+[files]
+usr = './usr'
+
+[hooks]
+postinstall = "./postinstall.sh"
+preremove = "./preremove.sh"
