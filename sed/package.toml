@@ -1,0 +1,22 @@
+spec = 1
+
+[package]
+name = "sed"
+description = "The Sed package contains a stream editor."
+version = "4.8"
+authors = [
+  "The GNU Project"
+]
+maintainers = [
+  "Lleyton <lleyton@innatical.com>"
+]
+
+[dependencies]
+glibc = "^2.34.0"
+
+[files]
+usr = './usr'
+
+[hooks]
+postinstall = "./postinstall.sh"
+preremove = "./preremove.sh"
