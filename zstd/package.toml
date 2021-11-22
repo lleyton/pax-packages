@@ -1,0 +1,15 @@
+spec = 1
+
+[package]
+name = "zstd"
+description = "Zstandard is a real-time compression algorithm, providing high compression ratios. It offers a very wide range of compression / speed trade-offs, while being backed by a very fast decoder."
+version = "1.5.0"
+authors = [
+  "Facebook"
+]
+maintainers = [
+  "Lleyton <lleyton@innatical.com>"
+]
+
+[files]
+"usr" = "./usr"
