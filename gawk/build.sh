@@ -13,7 +13,7 @@ mkdir -p pkg
 make                                                         &&
 make DESTDIR=$(pwd)/../pkg install)
 
-cp postremove.sh pkg
+cp preremove.sh pkg
 cp postinstall.sh pkg
 cp package.toml pkg
 ( cd pkg && tar --zstd -cf ../../out/gawk.apkg * )
@@ -22,5 +22,4 @@ cp package.toml pkg
 
 rm -r pkg
 rm -r src
-rm -r build
 rm src.tar.xz
