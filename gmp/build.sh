@@ -21,6 +21,7 @@ awk '/# PASS:/{total+=$3} ; END{print total}' gmp-check-log  &&
 make DESTDIR=$(pwd)/../pkg install                           &&
 make DESTDIR=$(pwd)/../pkg install html)
 
+rm -rf pkg/usr/share/info/dir
 cp preremove.sh pkg
 cp postinstall.sh pkg
 cp package.toml pkg
