@@ -1,0 +1,22 @@
+spec = 1
+
+[package]
+name = "gawk"
+description = "The Gawk package contains programs for manipulating text files."
+version = "5.1.0"
+authors = [
+  "The GNU Project"
+]
+maintainers = [
+  "Lleyton <lleyton@innatical.com>"
+]
+
+[dependencies]
+glibc = "^2.34.0"
+
+[files]
+usr = './usr'
+
+[hooks]
+postinstall = "./postinstall.sh"
+preremove = "./preremove.sh"
