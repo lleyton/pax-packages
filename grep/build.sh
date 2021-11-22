@@ -12,6 +12,7 @@ mkdir -p pkg
 make                                                         &&
 make DESTDIR=$(pwd)/../pkg install)
 
+rm -rf pkg/usr/share/info/dir
 cp preremove.sh pkg
 cp postinstall.sh pkg
 cp package.toml pkg
