@@ -7,9 +7,7 @@ mv zlib-* src
 
 mkdir -p pkg
 (cd src &&
-./configure --prefix=/usr                                     \
-            --build=$(./config.guess)            \
-            --host="x86_64-pax-linux-gnu"                     \
+./configure --prefix=/usr                                     &&
 make -j$(nproc)                                               &&
 make DESTDIR=$(pwd)/../pkg install_root=$(pwd)/../pkg install &&
 rm -fv $(pwd)/../pkg/usr/lib/libz.a)
