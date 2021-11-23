@@ -1,0 +1,16 @@
+spec = 1
+
+[package]
+name = "linux-headers"
+description = "The Linux kernel headers"
+version = "5.10.73"
+authors = [
+  "The Linux Project"
+]
+maintainers = [
+  "Lleyton <lleyton@innatical.com>"
+]
+
+[dependencies]
+[files]
+usr = "./usr"
