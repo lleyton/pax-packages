@@ -9,15 +9,9 @@ mv Python-* src
 
 mkdir -p pkg
 (cd src                                     &&
- ./configure --prefix=/usr                  \
-             --enable-shared                \
-             --with-system-expat            \
-             --with-system-ffi              \
-             --with-ensurepip=yes           \
-             --enable-optimizations         &&
-             # Python requires readelf for the host
-             #--build=$(../src/config.guess) \
-             #--host="x86_64-pax-linux-gnu"  && 
+./configure --prefix=/usr   \
+            --enable-shared \
+            --without-ensurepip &&
 make -j$(nproc)                             && 
 make DESTDIR=$(pwd)/../pkg install_root=$(pwd)/../pkg install)
 cp package.toml pkg
