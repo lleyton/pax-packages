@@ -3,7 +3,7 @@ spec = 1
 [package]
 name = "zlib"
 description = "zlib is a software library used for data compression."
-version = "5.1.8"
+version = "1.2.11"
 authors = [
   "Jean-loup Gailly",
   "Mark Adler"
